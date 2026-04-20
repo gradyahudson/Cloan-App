@@ -1,0 +1,169 @@
+{
+  "version": "0.4",
+  "title": "NHOMS — Find a Member",
+  "type": "page",
+  "content": [
+    {
+      "id": "nhf001",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhfc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhfw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Find a Member",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhfw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;font-size:1.1rem;\">Search our directory of board-certified oral and maxillofacial surgeons in New Hampshire.</p>",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhf002",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "20", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhfc02",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhfw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Search the Directory",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhfw04",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;flex-wrap:wrap;padding:24px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;margin:24px 0;\">\n  <input type=\"text\" placeholder=\"Search by name or city...\" style=\"flex:1;min-width:200px;padding:10px 14px;border:1px solid #e5e7eb;border-radius:6px;font-size:.95rem;\">\n  <select style=\"padding:10px 14px;border:1px solid #e5e7eb;border-radius:6px;font-size:.95rem;min-width:160px;\">\n    <option value=\"\">All Regions</option>\n    <option>Manchester / Nashua</option>\n    <option>Concord</option>\n    <option>Lakes Region</option>\n    <option>North Country</option>\n    <option>Seacoast</option>\n  </select>\n  <button style=\"padding:10px 24px;background:#1a3a6b;color:#fff;border:none;border-radius:6px;font-size:.95rem;font-weight:600;cursor:pointer;\">Search</button>\n</div>\n<p style=\"color:#6b7280;font-size:.85rem;\">Note: Connect this search to a custom post type or Members plugin in WordPress for live filtering. The form above is a UI placeholder.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhf003",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "20", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhfc03",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhfw05",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:24px;\">\n  <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:4px;\">[Surgeon Name, DMD/MD]</h3>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">[Practice Name]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">[City, NH]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;\">[Phone Number]</p>\n  <a href=\"#\" style=\"display:inline-block;margin-top:12px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">View Profile →</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhfc04",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhfw06",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:24px;\">\n  <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:4px;\">[Surgeon Name, DMD/MD]</h3>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">[Practice Name]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">[City, NH]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;\">[Phone Number]</p>\n  <a href=\"#\" style=\"display:inline-block;margin-top:12px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">View Profile →</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhfc05",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhfw07",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:24px;\">\n  <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:4px;\">[Surgeon Name, DMD/MD]</h3>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">[Practice Name]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">[City, NH]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;\">[Phone Number]</p>\n  <a href=\"#\" style=\"display:inline-block;margin-top:12px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">View Profile →</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhf004",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "48", "right": "40", "bottom": "48", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhfc06",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhfw08",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#6b7280;font-size:.9rem;\"><strong>Note for WordPress Setup:</strong> For a live searchable directory, install a members plugin such as <em>Business Directory Plugin</em> or <em>Member Directory</em>, or build a custom post type for Surgeons. The cards above are layout placeholders to be replaced with dynamic content.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

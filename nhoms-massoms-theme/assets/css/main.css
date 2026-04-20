@@ -1,0 +1,298 @@
+/* ==========================================================
+   Elementor integration helpers
+   ========================================================== */
+
+/* Make Elementor sections respect max-width */
+.elementor-section.elementor-section-boxed > .elementor-container {
+	max-width: var(--max-width);
+}
+
+/* Full-width stretch sections */
+.elementor-section-full_width .elementor-container {
+	max-width: 100%;
+}
+
+/* Elementor buttons inherit brand */
+.elementor-button.elementor-button-primary,
+.elementor-button[style*="background"] {
+	border-radius: var(--radius);
+	font-family: var(--font-body);
+	font-weight: 600;
+}
+
+/* ==========================================================
+   Shared section styles — used inside Elementor templates
+   ========================================================== */
+
+.nhoms-section {
+	padding: var(--section-padding);
+}
+
+.nhoms-section--alt {
+	background: var(--color-bg-alt);
+}
+
+.nhoms-section--dark {
+	background: var(--color-primary-dark);
+	color: #ffffff;
+}
+
+.nhoms-section--dark h1,
+.nhoms-section--dark h2,
+.nhoms-section--dark h3 {
+	color: #ffffff;
+}
+
+/* Section heading pattern */
+.section-heading {
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.section-heading h2 {
+	font-size: 2rem;
+	margin-bottom: 12px;
+}
+
+.section-heading p {
+	color: var(--color-text-muted);
+	max-width: 560px;
+	margin: 0 auto;
+}
+
+/* ==========================================================
+   Hero block
+   ========================================================== */
+
+.hero {
+	position: relative;
+	padding: 100px 24px;
+	background: var(--color-primary);
+	color: #ffffff;
+	overflow: hidden;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.1) 100%);
+}
+
+.hero__inner {
+	position: relative;
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+
+.hero h1 {
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	color: #ffffff;
+	max-width: 720px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 1.2rem;
+	max-width: 560px;
+	margin-bottom: 36px;
+	opacity: .9;
+}
+
+.hero__cta {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+/* ==========================================================
+   Card grid
+   ========================================================== */
+
+.cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 28px;
+}
+
+.card {
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: calc(var(--radius) * 1.5);
+	padding: 32px 28px;
+	transition: box-shadow .2s, transform .2s;
+}
+
+.card:hover {
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
+}
+
+.card__icon {
+	width: 56px;
+	height: 56px;
+	border-radius: 12px;
+	background: var(--color-accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.card h3 { margin-bottom: 8px; font-size: 1.1rem; }
+.card p  { color: var(--color-text-muted); font-size: .92rem; }
+
+/* ==========================================================
+   Member / Surgeon directory
+   ========================================================== */
+
+.directory-search {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	padding: 24px;
+	background: var(--color-bg-alt);
+	border-radius: var(--radius);
+	border: 1px solid var(--color-border);
+}
+
+.directory-search input,
+.directory-search select {
+	flex: 1;
+	min-width: 180px;
+	padding: 10px 14px;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius);
+	font-size: .95rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+	background: #fff;
+}
+
+.directory-search input:focus,
+.directory-search select:focus {
+	outline: none;
+	border-color: var(--color-primary);
+	box-shadow: 0 0 0 3px rgba(26,58,107,.12);
+}
+
+.member-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 20px;
+}
+
+.member-card {
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius);
+	padding: 24px;
+}
+
+.member-card h3 { font-size: 1rem; margin-bottom: 4px; }
+.member-card p  { font-size: .85rem; color: var(--color-text-muted); }
+
+/* ==========================================================
+   CTA banner
+   ========================================================== */
+
+.cta-banner {
+	background: var(--color-primary);
+	color: #fff;
+	text-align: center;
+	padding: 64px 24px;
+}
+
+.cta-banner h2 { color: #fff; font-size: 2rem; margin-bottom: 16px; }
+.cta-banner p  { opacity: .85; margin-bottom: 32px; max-width: 520px; margin-inline: auto; }
+
+/* ==========================================================
+   News / Events listing
+   ========================================================== */
+
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 28px;
+}
+
+.news-card {
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius);
+	overflow: hidden;
+	transition: box-shadow .2s;
+}
+
+.news-card:hover { box-shadow: var(--shadow-md); }
+
+.news-card__image img { width: 100%; height: 200px; object-fit: cover; }
+
+.news-card__body { padding: 24px; }
+.news-card__date { font-size: .8rem; color: var(--color-text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: .04em; }
+.news-card h3    { font-size: 1rem; margin-bottom: 8px; }
+.news-card p     { font-size: .9rem; color: var(--color-text-muted); }
+
+/* ==========================================================
+   Contact section
+   ========================================================== */
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: start;
+}
+
+.contact-info h2 { margin-bottom: 24px; }
+
+.contact-detail {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+	margin-bottom: 24px;
+}
+
+.contact-detail__icon {
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	background: var(--color-accent);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ==========================================================
+   Resources / Downloads
+   ========================================================== */
+
+.resource-list { list-style: none; }
+
+.resource-list li {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 0;
+	border-bottom: 1px solid var(--color-border);
+}
+
+.resource-list li:last-child { border-bottom: none; }
+
+.resource-list a {
+	font-weight: 500;
+	color: var(--color-primary);
+}
+
+.resource-tag {
+	font-size: .75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	padding: 3px 8px;
+	background: var(--color-accent);
+	color: var(--color-primary);
+	border-radius: 4px;
+}

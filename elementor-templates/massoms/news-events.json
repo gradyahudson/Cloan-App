@@ -1,0 +1,209 @@
+{
+  "version": "0.4",
+  "title": "MassOMS — News & Events",
+  "type": "page",
+  "content": [
+    {
+      "id": "mane01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "manc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "manw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "News & Events",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "manw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;\">Society news, upcoming CME events, legislative updates, and member announcements.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mane02",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "manc02",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "manw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Featured Event",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "24", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "manw04",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;\">\n  <div style=\"background:#e5e7eb;min-height:240px;\"></div>\n  <div style=\"padding:36px;\">\n    <p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;\">[Month DD, YYYY] · [Location]</p>\n    <h3 style=\"font-size:1.4rem;color:#1a4080;margin-bottom:12px;\">[Featured Event Title — Annual Meeting, CME Conference, etc.]</h3>\n    <p style=\"color:#6b7280;margin-bottom:24px;\">[Event description. Replace with featured event from MassOMS HubSpot Events page.]</p>\n    <a href=\"#\" style=\"display:inline-flex;align-items:center;padding:12px 24px;background:#1a4080;color:#fff;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;\">Register Now →</a>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mane03",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "48", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "manc03",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "manw05",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Upcoming Events",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "24", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "manw06",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:12px;\"><div style=\"display:flex;gap:0;\"><div style=\"min-width:80px;background:#1a4080;color:#fff;text-align:center;padding:16px 12px;\"><div style=\"font-size:1.5rem;font-weight:700;line-height:1;\">[DD]</div><div style=\"font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;margin-top:4px;\">[MON]</div></div><div style=\"padding:20px 24px;\"><h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:4px;\">[Event Title]</h3><p style=\"color:#6b7280;font-size:.85rem;margin-bottom:6px;\">[Venue] · [City, MA] · [Time]</p><p style=\"font-size:.9rem;\">[Brief description.]</p><a href=\"#\" style=\"display:inline-block;margin-top:10px;font-size:.85rem;font-weight:600;color:#1a4080;\">Learn More →</a></div></div></div>\n<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:12px;\"><div style=\"display:flex;gap:0;\"><div style=\"min-width:80px;background:#1a4080;color:#fff;text-align:center;padding:16px 12px;\"><div style=\"font-size:1.5rem;font-weight:700;line-height:1;\">[DD]</div><div style=\"font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;margin-top:4px;\">[MON]</div></div><div style=\"padding:20px 24px;\"><h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:4px;\">[Event Title]</h3><p style=\"color:#6b7280;font-size:.85rem;margin-bottom:6px;\">[Venue] · [City, MA] · [Time]</p><p style=\"font-size:.9rem;\">[Brief description.]</p><a href=\"#\" style=\"display:inline-block;margin-top:10px;font-size:.85rem;font-weight:600;color:#1a4080;\">Learn More →</a></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mane04",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "manc04",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "manw07",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Latest News",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "32", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "manw08",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#6b7280;font-size:.9rem;margin-bottom:32px;\">[Tip: In WordPress, use Elementor's Posts widget or the native Latest Posts block here to auto-pull from your News category. Or replace these cards with static content from HubSpot.]</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "manc05",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "manw09",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;\"><div style=\"height:160px;background:#dde5f0;\"></div><div style=\"padding:24px;\"><p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;\">[Category] · [Date]</p><h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:8px;\">[Article Title — paste from HubSpot]</h3><p style=\"font-size:.9rem;color:#6b7280;\">[Excerpt]</p><a href=\"#\" style=\"display:inline-block;margin-top:16px;font-size:.85rem;font-weight:600;color:#1a4080;\">Read More →</a></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "manc06",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "manw10",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;\"><div style=\"height:160px;background:#dde5f0;\"></div><div style=\"padding:24px;\"><p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;\">[Category] · [Date]</p><h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:8px;\">[Article Title]</h3><p style=\"font-size:.9rem;color:#6b7280;\">[Excerpt]</p><a href=\"#\" style=\"display:inline-block;margin-top:16px;font-size:.85rem;font-weight:600;color:#1a4080;\">Read More →</a></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "manc07",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "manw11",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;\"><div style=\"height:160px;background:#dde5f0;\"></div><div style=\"padding:24px;\"><p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;\">[Category] · [Date]</p><h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:8px;\">[Article Title]</h3><p style=\"font-size:.9rem;color:#6b7280;\">[Excerpt]</p><a href=\"#\" style=\"display:inline-block;margin-top:16px;font-size:.85rem;font-weight:600;color:#1a4080;\">Read More →</a></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

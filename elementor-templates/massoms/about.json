@@ -1,0 +1,271 @@
+{
+  "version": "0.4",
+  "title": "MassOMS — About",
+  "type": "page",
+  "content": [
+    {
+      "id": "maa001",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "maac01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "maaw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About MassOMS",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "maaw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;font-size:1.1rem;\">The Massachusetts Society of Oral & Maxillofacial Surgeons.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maa002",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "maac02",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "maaw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Who We Are",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 32 }
+              },
+              "elements": []
+            },
+            {
+              "id": "maaw04",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Replace with MassOMS About content from HubSpot. Cover history, founding, and mission.]</p><p style=\"margin-top:16px;\">[Second paragraph about membership and services.]</p><p style=\"margin-top:16px;\">[Third paragraph about advocacy and legislative work.]</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "maac03",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "maaw05",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": { "url": "", "id": "" },
+                "image_size": "full"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maa003",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "maac04",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "maaw06",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Board of Directors",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 32 },
+                "margin": { "unit": "px", "bottom": "48", "isLinked": false }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "maac05",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maaw07",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>President</h3>",
+                "description_text": "[Name, DMD/MD]\n[Institution / Practice]",
+                "icon_color": "#1a4080"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "maac06",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maaw08",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>Vice President</h3>",
+                "description_text": "[Name, DMD/MD]\n[Institution / Practice]",
+                "icon_color": "#1a4080"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "maac07",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maaw09",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>Secretary</h3>",
+                "description_text": "[Name, DMD/MD]\n[Institution / Practice]",
+                "icon_color": "#1a4080"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "maac08",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maaw10",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>Treasurer</h3>",
+                "description_text": "[Name, DMD/MD]\n[Institution / Practice]",
+                "icon_color": "#1a4080"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maa004",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "maac09",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "maaw11",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Mission",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 }
+              },
+              "elements": []
+            },
+            {
+              "id": "maaw12",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Mission statement text — copy from HubSpot About page.]</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "maac10",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "maaw13",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Vision",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 }
+              },
+              "elements": []
+            },
+            {
+              "id": "maaw14",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Vision statement text — copy from HubSpot About page.]</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

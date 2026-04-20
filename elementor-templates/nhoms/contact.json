@@ -1,0 +1,146 @@
+{
+  "version": "0.4",
+  "title": "NHOMS — Contact",
+  "type": "page",
+  "content": [
+    {
+      "id": "nhco01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhcc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhcw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Contact NHOMS",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhcw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;\">Get in touch with the New Hampshire Oral & Maxillofacial Surgeons society.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhco02",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhcc02",
+          "elType": "column",
+          "settings": { "_column_size": 40 },
+          "elements": [
+            {
+              "id": "nhcw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Contact Information",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "32", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhcw04",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-envelope", "library": "fa-solid" },
+                "title_text": "<h3>Email</h3>",
+                "description_text": "[info@nhoms.com — update with actual email from HubSpot]",
+                "icon_color": "#1a3a6b",
+                "icon_background_color": "#e8f0fe",
+                "position": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "nhcw05",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-map-marker-alt", "library": "fa-solid" },
+                "title_text": "<h3>Mailing Address</h3>",
+                "description_text": "[Street Address]\n[City, NH ZIP — update from HubSpot contact page]",
+                "icon_color": "#1a3a6b",
+                "icon_background_color": "#e8f0fe",
+                "position": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "nhcw06",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-phone", "library": "fa-solid" },
+                "title_text": "<h3>Phone</h3>",
+                "description_text": "[Phone number — update from HubSpot contact page]",
+                "icon_color": "#1a3a6b",
+                "icon_background_color": "#e8f0fe",
+                "position": "left"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhcc03",
+          "elType": "column",
+          "settings": { "_column_size": 60 },
+          "elements": [
+            {
+              "id": "nhcw07",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Send Us a Message",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "24", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhcw08",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<p style=\"color:#6b7280;font-size:.9rem;margin-bottom:24px;\">Install <strong>WPForms Lite</strong> (free) or <strong>Contact Form 7</strong>, create a contact form, then replace this placeholder with the form shortcode. Example: <code>[wpforms id=\"1\"]</code> or <code>[contact-form-7 id=\"1\"]</code></p>\n<div style=\"border:2px dashed #e5e7eb;border-radius:6px;padding:40px;text-align:center;background:#f9fafb;\">\n  <p style=\"color:#6b7280;font-size:.95rem;\">📋 <strong>Contact Form Placeholder</strong><br>Replace this box with your contact form shortcode after installing WPForms or Contact Form 7.</p>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

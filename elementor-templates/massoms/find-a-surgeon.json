@@ -1,0 +1,130 @@
+{
+  "version": "0.4",
+  "title": "MassOMS — Find a Surgeon",
+  "type": "page",
+  "content": [
+    {
+      "id": "mafs01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mafc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "mafw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Find an OMS Surgeon",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "mafw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;font-size:1.1rem;\">Search for board-certified oral and maxillofacial surgeons throughout Massachusetts.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mafs02",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "20", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mafc02",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "mafw03",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;flex-wrap:wrap;padding:24px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;margin-bottom:12px;\">\n  <input type=\"text\" placeholder=\"Search by name or city...\" style=\"flex:1;min-width:200px;padding:10px 14px;border:1px solid #e5e7eb;border-radius:6px;font-size:.95rem;\">\n  <select style=\"padding:10px 14px;border:1px solid #e5e7eb;border-radius:6px;font-size:.95rem;min-width:180px;\">\n    <option value=\"\">All Regions</option>\n    <option>Boston / Greater Boston</option>\n    <option>Worcester</option>\n    <option>Springfield / Western Mass</option>\n    <option>North Shore</option>\n    <option>South Shore / Cape Cod</option>\n    <option>Pioneer Valley</option>\n  </select>\n  <select style=\"padding:10px 14px;border:1px solid #e5e7eb;border-radius:6px;font-size:.95rem;min-width:180px;\">\n    <option value=\"\">All Specialties</option>\n    <option>Dental Implants</option>\n    <option>Wisdom Teeth</option>\n    <option>Jaw Surgery</option>\n    <option>TMJ Treatment</option>\n    <option>Facial Trauma</option>\n    <option>Reconstructive Surgery</option>\n  </select>\n  <button style=\"padding:10px 24px;background:#1a4080;color:#fff;border:none;border-radius:6px;font-size:.95rem;font-weight:600;cursor:pointer;\">Search</button>\n</div>\n<p style=\"color:#6b7280;font-size:.85rem;\">Install <em>Business Directory Plugin</em> or a custom Surgeons post type for live search. This form is a layout placeholder.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mafs03",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "20", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mafc03",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "mafw04",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:24px;\">\n  <h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:4px;\">[Surgeon Name, DMD/MD]</h3>\n  <p style=\"color:#c8a84b;font-size:.8rem;font-weight:600;margin-bottom:8px;\">Board Certified OMS</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">📍 [City, MA]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">🏥 [Practice / Hospital Affiliation]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;\">[Specialties: list from HubSpot]</p>\n  <a href=\"#\" style=\"display:inline-block;margin-top:14px;font-size:.85rem;font-weight:600;color:#1a4080;\">View Profile →</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mafc04",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "mafw05",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:24px;\">\n  <h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:4px;\">[Surgeon Name, DMD/MD]</h3>\n  <p style=\"color:#c8a84b;font-size:.8rem;font-weight:600;margin-bottom:8px;\">Board Certified OMS</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">📍 [City, MA]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">🏥 [Practice / Hospital Affiliation]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;\">[Specialties]</p>\n  <a href=\"#\" style=\"display:inline-block;margin-top:14px;font-size:.85rem;font-weight:600;color:#1a4080;\">View Profile →</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mafc05",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "mafw06",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:24px;\">\n  <h3 style=\"font-size:1rem;color:#1a4080;margin-bottom:4px;\">[Surgeon Name, DMD/MD]</h3>\n  <p style=\"color:#c8a84b;font-size:.8rem;font-weight:600;margin-bottom:8px;\">Board Certified OMS</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">📍 [City, MA]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:4px;\">🏥 [Practice / Hospital Affiliation]</p>\n  <p style=\"color:#6b7280;font-size:.85rem;\">[Specialties]</p>\n  <a href=\"#\" style=\"display:inline-block;margin-top:14px;font-size:.85rem;font-weight:600;color:#1a4080;\">View Profile →</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

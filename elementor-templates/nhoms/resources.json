@@ -1,0 +1,199 @@
+{
+  "version": "0.4",
+  "title": "NHOMS — Resources",
+  "type": "page",
+  "content": [
+    {
+      "id": "nhr001",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhrc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhrw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Member Resources",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhrw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;\">Downloads, guidelines, coding references, and educational materials for NHOMS members.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhr002",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhrc02",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhrw03",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-file-pdf", "library": "fa-solid" },
+                "title_text": "<h3>Clinical Guidelines</h3>",
+                "description_text": "Access current OMS clinical practice guidelines and protocols.",
+                "icon_color": "#1a3a6b",
+                "icon_background_color": "#e8f0fe"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhrc03",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhrw04",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-code", "library": "fa-solid" },
+                "title_text": "<h3>Coding Resources</h3>",
+                "description_text": "ICD-10, CPT, and CDT coding references for oral and maxillofacial procedures.",
+                "icon_color": "#1a3a6b",
+                "icon_background_color": "#e8f0fe"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhrc04",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhrw05",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-university", "library": "fa-solid" },
+                "title_text": "<h3>State Regulations</h3>",
+                "description_text": "New Hampshire licensing, DEA requirements, and state legislative updates.",
+                "icon_color": "#1a3a6b",
+                "icon_background_color": "#e8f0fe"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhr003",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhrc05",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhrw06",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Downloads & Documents",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "32", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhrw07",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<ul style=\"list-style:none;padding:0;\">\n  <li style=\"display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #e5e7eb;\">\n    <span style=\"font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;background:#e8f0fe;color:#1a3a6b;border-radius:4px;\">PDF</span>\n    <a href=\"#\" style=\"font-weight:500;color:#1a3a6b;\">[Document Title — replace with actual resource from HubSpot]</a>\n    <span style=\"margin-left:auto;font-size:.8rem;color:#6b7280;\">[Date]</span>\n  </li>\n  <li style=\"display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #e5e7eb;\">\n    <span style=\"font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;background:#e8f0fe;color:#1a3a6b;border-radius:4px;\">PDF</span>\n    <a href=\"#\" style=\"font-weight:500;color:#1a3a6b;\">[Document Title]</a>\n    <span style=\"margin-left:auto;font-size:.8rem;color:#6b7280;\">[Date]</span>\n  </li>\n  <li style=\"display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #e5e7eb;\">\n    <span style=\"font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;background:#e8f0fe;color:#1a3a6b;border-radius:4px;\">LINK</span>\n    <a href=\"#\" style=\"font-weight:500;color:#1a3a6b;\">[External Resource Title]</a>\n    <span style=\"margin-left:auto;font-size:.8rem;color:#6b7280;\">[Date]</span>\n  </li>\n  <li style=\"display:flex;align-items:center;gap:16px;padding:16px 0;\">\n    <span style=\"font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;background:#e8f0fe;color:#1a3a6b;border-radius:4px;\">PDF</span>\n    <a href=\"#\" style=\"font-weight:500;color:#1a3a6b;\">[Document Title]</a>\n    <span style=\"margin-left:auto;font-size:.8rem;color:#6b7280;\">[Date]</span>\n  </li>\n</ul>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhr004",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "56", "right": "40", "bottom": "56", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhrc06",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhrw08",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Need a Resource That Isn't Listed?",
+                "header_size": "h2",
+                "title_color": "#ffffff",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "nhrw09",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Contact NHOMS",
+                "link": { "url": "/contact/" },
+                "align": "center",
+                "background_color": "#c8a84b",
+                "hover_background_color": "#b5963e"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}
