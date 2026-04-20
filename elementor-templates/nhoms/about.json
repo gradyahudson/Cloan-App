@@ -1,0 +1,282 @@
+{
+  "version": "0.4",
+  "title": "NHOMS — About",
+  "type": "page",
+  "content": [
+    {
+      "id": "nha001",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhac01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhaw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About NHOMS",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhaw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;font-size:1.1rem;\">The professional society for New Hampshire's oral and maxillofacial surgeons.</p>",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nha002",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhac02",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "nhaw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Mission",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 32 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhaw04",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Replace with NHOMS mission statement from HubSpot About page. Typically 2–3 paragraphs covering purpose, membership benefits, and commitment to patient care.]</p><p style=\"margin-top:16px;\">[Second paragraph from HubSpot source.]</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "nhaw05",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View Our Members",
+                "link": { "url": "/find-a-member/" },
+                "align": "left"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhac03",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "nhaw06",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": { "url": "", "id": "" },
+                "image_size": "full"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nha003",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhac04",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhaw07",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Leadership & Officers",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 32 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhaw08",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;color:#6b7280;margin-bottom:40px;\">[Add officer names and roles below. Copy from HubSpot About page.]</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nha004",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "0", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhac05",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "nhaw09",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>President</h3>",
+                "description_text": "[Name, DMD/MD]",
+                "icon_color": "#1a3a6b"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhac06",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "nhaw10",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>President-Elect</h3>",
+                "description_text": "[Name, DMD/MD]",
+                "icon_color": "#1a3a6b"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhac07",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "nhaw11",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>Secretary/Treasurer</h3>",
+                "description_text": "[Name, DMD/MD]",
+                "icon_color": "#1a3a6b"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhac08",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "nhaw12",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-tie", "library": "fa-solid" },
+                "title_text": "<h3>Past President</h3>",
+                "description_text": "[Name, DMD/MD]",
+                "icon_color": "#1a3a6b"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nha005",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "60", "right": "40", "bottom": "60", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhac09",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhaw13",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Interested in Joining NHOMS?",
+                "header_size": "h2",
+                "title_color": "#ffffff",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "nhaw14",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Contact Us",
+                "link": { "url": "/contact/" },
+                "align": "center",
+                "background_color": "#c8a84b",
+                "hover_background_color": "#b5963e"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

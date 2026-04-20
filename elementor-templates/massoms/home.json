@@ -1,0 +1,367 @@
+{
+  "version": "0.4",
+  "title": "MassOMS — Home Page",
+  "type": "page",
+  "content": [
+    {
+      "id": "mas001",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "100", "right": "40", "bottom": "100", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mac001",
+          "elType": "column",
+          "settings": { "_column_size": 60 },
+          "elements": [
+            {
+              "id": "maw001",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Massachusetts Oral & Maxillofacial Surgeons",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#ffffff",
+                "typography_font_size": { "unit": "px", "size": 52 },
+                "typography_line_height": { "unit": "em", "size": 1.2 }
+              },
+              "elements": []
+            },
+            {
+              "id": "maw002",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.85);font-size:1.15rem;margin-bottom:32px;\">The professional society advancing oral and maxillofacial surgery practice, education, and advocacy across the Commonwealth of Massachusetts.</p>",
+                "align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "maw003",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:16px;flex-wrap:wrap;\">\n  <a href=\"/find-a-surgeon/\" style=\"display:inline-flex;align-items:center;padding:14px 28px;background:#c8a84b;color:#fff;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;\">Find a Surgeon</a>\n  <a href=\"/about/\" style=\"display:inline-flex;align-items:center;padding:14px 28px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;\">About MassOMS</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac002",
+          "elType": "column",
+          "settings": { "_column_size": 40 },
+          "elements": [
+            {
+              "id": "maw004",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": { "url": "", "id": "" },
+                "image_size": "full"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mas002",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mac003",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maw005",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1a4080;color:#fff;text-align:center;padding:40px 24px;\">\n  <div style=\"font-size:2.5rem;font-weight:700;margin-bottom:8px;\">[###]</div>\n  <div style=\"font-size:.9rem;opacity:.8;\">Active Members</div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac004",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maw006",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#122850;color:#fff;text-align:center;padding:40px 24px;\">\n  <div style=\"font-size:2.5rem;font-weight:700;margin-bottom:8px;\">[##]</div>\n  <div style=\"font-size:.9rem;opacity:.8;\">Years Serving Mass.</div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac005",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maw007",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#c8a84b;color:#fff;text-align:center;padding:40px 24px;\">\n  <div style=\"font-size:2.5rem;font-weight:700;margin-bottom:8px;\">[##]</div>\n  <div style=\"font-size:.9rem;opacity:.8;\">Annual CME Hours</div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac006",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "maw008",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1a4080;color:#fff;text-align:center;padding:40px 24px;opacity:.85;\">\n  <div style=\"font-size:2.5rem;font-weight:700;margin-bottom:8px;\">[##]</div>\n  <div style=\"font-size:.9rem;opacity:.8;\">Training Programs</div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mas003",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mac007",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "maw009",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": { "url": "", "id": "" },
+                "image_size": "full"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac008",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "maw010",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Serving Massachusetts OMS Professionals",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 32 },
+                "margin": { "unit": "px", "bottom": "20", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "maw011",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Replace with MassOMS mission/about content from HubSpot homepage. Typically covers professional development, advocacy, and member services.]</p><p style=\"margin-top:16px;\">[Second paragraph from HubSpot source.]</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "maw012",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Learn More About MassOMS",
+                "link": { "url": "/about/" },
+                "align": "left",
+                "margin": { "unit": "px", "top": "24", "isLinked": false }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mas004",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mac009",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "maw013",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What We Offer",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 32 },
+                "margin": { "unit": "px", "bottom": "48", "isLinked": false }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac010",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "maw014",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-user-md", "library": "fa-solid" },
+                "title_text": "<h3>Find a Surgeon</h3>",
+                "description_text": "Locate board-certified oral and maxillofacial surgeons across Massachusetts.",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac011",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "maw015",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-chalkboard-teacher", "library": "fa-solid" },
+                "title_text": "<h3>Education & CME</h3>",
+                "description_text": "Continuing medical education programs, conferences, and professional development resources.",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac012",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "maw016",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-landmark", "library": "fa-solid" },
+                "title_text": "<h3>Advocacy</h3>",
+                "description_text": "Representing OMS professionals in Massachusetts legislative and regulatory matters.",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mas005",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "64", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mac013",
+          "elType": "column",
+          "settings": { "_column_size": 70 },
+          "elements": [
+            {
+              "id": "maw017",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Need an Oral Surgeon in Massachusetts?",
+                "header_size": "h2",
+                "title_color": "#ffffff",
+                "typography_font_size": { "unit": "px", "size": 30 }
+              },
+              "elements": []
+            },
+            {
+              "id": "maw018",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);\">Our member directory connects patients and referring providers with qualified OMS specialists statewide.</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mac014",
+          "elType": "column",
+          "settings": { "_column_size": 30 },
+          "elements": [
+            {
+              "id": "maw019",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Search the Directory",
+                "link": { "url": "/find-a-surgeon/" },
+                "align": "right",
+                "background_color": "#c8a84b",
+                "hover_background_color": "#b5963e"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

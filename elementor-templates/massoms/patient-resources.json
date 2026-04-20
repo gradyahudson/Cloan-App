@@ -1,0 +1,232 @@
+{
+  "version": "0.4",
+  "title": "MassOMS — Patient Resources",
+  "type": "page",
+  "content": [
+    {
+      "id": "mapr01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mapc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "mapw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Patient Resources",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "mapw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;\">Information and resources for patients seeking oral and maxillofacial surgery care in Massachusetts.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mapr02",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mapc02",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "mapw03",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-tooth", "library": "fa-solid" },
+                "title_text": "<h3>About OMS</h3>",
+                "description_text": "Learn what oral and maxillofacial surgeons do and what conditions they treat.",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mapc03",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "mapw04",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-question-circle", "library": "fa-solid" },
+                "title_text": "<h3>FAQs</h3>",
+                "description_text": "Common questions about OMS procedures, recovery, insurance, and finding a surgeon.",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mapc04",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "mapw05",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-search", "library": "fa-solid" },
+                "title_text": "<h3>Find a Surgeon</h3>",
+                "description_text": "Search our directory to find a qualified OMS specialist near you.",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mapr03",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mapc05",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "mapw06",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What Is Oral & Maxillofacial Surgery?",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 }
+              },
+              "elements": []
+            },
+            {
+              "id": "mapw07",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[Replace with patient-facing description of OMS from MassOMS HubSpot site. Describe what the specialty covers, common procedures, and when to see an OMS.]</p><p style=\"margin-top:16px;\">[Continue with conditions treated: wisdom teeth, dental implants, jaw surgery, facial trauma, reconstructive surgery, etc.]</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "mapw08",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Find a Surgeon Near You",
+                "link": { "url": "/find-a-surgeon/" },
+                "align": "left",
+                "margin": { "unit": "px", "top": "24", "isLinked": false }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "mapc06",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "mapw09",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Common Procedures",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 }
+              },
+              "elements": []
+            },
+            {
+              "id": "mapw10",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<ul style=\"list-style:none;padding:0;\">\n  <li style=\"padding:12px 0;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> Wisdom Tooth Extraction</li>\n  <li style=\"padding:12px 0;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> Dental Implants</li>\n  <li style=\"padding:12px 0;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> Corrective Jaw Surgery (Orthognathic)</li>\n  <li style=\"padding:12px 0;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> TMJ / Jaw Joint Disorders</li>\n  <li style=\"padding:12px 0;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> Facial Trauma & Reconstruction</li>\n  <li style=\"padding:12px 0;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> Bone Grafting</li>\n  <li style=\"padding:12px 0;display:flex;align-items:center;gap:12px;\"><span style=\"color:#1a4080;font-weight:700;\">→</span> Oral Pathology & Biopsies</li>\n</ul>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mapr04",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mapc07",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "mapw11",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Frequently Asked Questions",
+                "header_size": "h2",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 32 },
+                "margin": { "unit": "px", "bottom": "40", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "mapw12",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:8px;\">\n  <details style=\"padding:0;\">\n    <summary style=\"padding:18px 24px;cursor:pointer;font-weight:600;color:#1a4080;list-style:none;\">[FAQ Question 1 — copy from HubSpot Patient Resources page]</summary>\n    <p style=\"padding:0 24px 18px;color:#6b7280;\">[Answer text from HubSpot.]</p>\n  </details>\n</div>\n<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:8px;\">\n  <details style=\"padding:0;\">\n    <summary style=\"padding:18px 24px;cursor:pointer;font-weight:600;color:#1a4080;list-style:none;\">[FAQ Question 2]</summary>\n    <p style=\"padding:0 24px 18px;color:#6b7280;\">[Answer text.]</p>\n  </details>\n</div>\n<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:8px;\">\n  <details style=\"padding:0;\">\n    <summary style=\"padding:18px 24px;cursor:pointer;font-weight:600;color:#1a4080;list-style:none;\">[FAQ Question 3]</summary>\n    <p style=\"padding:0 24px 18px;color:#6b7280;\">[Answer text.]</p>\n  </details>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

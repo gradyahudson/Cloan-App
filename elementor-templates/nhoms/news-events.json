@@ -1,0 +1,178 @@
+{
+  "version": "0.4",
+  "title": "NHOMS — News & Events",
+  "type": "page",
+  "content": [
+    {
+      "id": "nhne01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a3a6b",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhnc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhnw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "News & Events",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "nhnw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;\">Society announcements, legislation updates, CME events, and member news.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhne02",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhnc02",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhnw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Upcoming Events",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhne03",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "0", "right": "40", "bottom": "60", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhnc03",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhnw04",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:16px;\">\n  <div style=\"display:flex;gap:0;\">\n    <div style=\"min-width:80px;background:#1a3a6b;color:#fff;text-align:center;padding:16px 12px;\">\n      <div style=\"font-size:1.5rem;font-weight:700;line-height:1;\">[DD]</div>\n      <div style=\"font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;margin-top:4px;\">[MON]</div>\n    </div>\n    <div style=\"padding:20px 24px;\">\n      <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:4px;\">[Event Title — replace with event from HubSpot]</h3>\n      <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:8px;\">[Location] · [Time]</p>\n      <p style=\"font-size:.9rem;\">[Short event description.]</p>\n      <a href=\"#\" style=\"display:inline-block;margin-top:12px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">Learn More →</a>\n    </div>\n  </div>\n</div>\n<div style=\"border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;margin-bottom:16px;\">\n  <div style=\"display:flex;gap:0;\">\n    <div style=\"min-width:80px;background:#1a3a6b;color:#fff;text-align:center;padding:16px 12px;\">\n      <div style=\"font-size:1.5rem;font-weight:700;line-height:1;\">[DD]</div>\n      <div style=\"font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;margin-top:4px;\">[MON]</div>\n    </div>\n    <div style=\"padding:20px 24px;\">\n      <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:4px;\">[Event Title]</h3>\n      <p style=\"color:#6b7280;font-size:.85rem;margin-bottom:8px;\">[Location] · [Time]</p>\n      <p style=\"font-size:.9rem;\">[Short event description.]</p>\n      <a href=\"#\" style=\"display:inline-block;margin-top:12px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">Learn More →</a>\n    </div>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhne04",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "64", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "nhnc04",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "nhnw05",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Latest News",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "32", "isLinked": false }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhnc05",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhnw06",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;height:100%;\">\n  <div style=\"height:160px;background:#e5e7eb;\"></div>\n  <div style=\"padding:24px;\">\n    <p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;\">[Category] · [Date]</p>\n    <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:8px;\">[News Article Title]</h3>\n    <p style=\"font-size:.9rem;color:#6b7280;\">[Short summary of the article. Replace with content from HubSpot.]</p>\n    <a href=\"#\" style=\"display:inline-block;margin-top:16px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">Read More →</a>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhnc06",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhnw07",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;height:100%;\">\n  <div style=\"height:160px;background:#e5e7eb;\"></div>\n  <div style=\"padding:24px;\">\n    <p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;\">[Category] · [Date]</p>\n    <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:8px;\">[News Article Title]</h3>\n    <p style=\"font-size:.9rem;color:#6b7280;\">[Short summary.]</p>\n    <a href=\"#\" style=\"display:inline-block;margin-top:16px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">Read More →</a>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "nhnc07",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "nhnw08",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;height:100%;\">\n  <div style=\"height:160px;background:#e5e7eb;\"></div>\n  <div style=\"padding:24px;\">\n    <p style=\"font-size:.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;\">[Category] · [Date]</p>\n    <h3 style=\"font-size:1rem;color:#1a3a6b;margin-bottom:8px;\">[News Article Title]</h3>\n    <p style=\"font-size:.9rem;color:#6b7280;\">[Short summary.]</p>\n    <a href=\"#\" style=\"display:inline-block;margin-top:16px;font-size:.85rem;font-weight:600;color:#1a3a6b;\">Read More →</a>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}

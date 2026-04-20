@@ -1,0 +1,258 @@
+/*
+Theme Name: NHOMS MassOMS
+Theme URI: https://github.com/gradyahudson/nhoms-massoms-site
+Author: NHOMS / MassOMS
+Description: WordPress theme for NHOMS and MassOMS sites. Built for full Elementor compatibility with drag-and-drop page editing. Migrated from HubSpot CMS.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 8.0
+License: Private
+Text Domain: nhoms-massoms
+*/
+
+/* =========================================================
+   CSS Custom Properties — update these to match brand colors
+   ========================================================= */
+:root {
+  /* NHOMS primary palette — adjust to match HubSpot brand */
+  --color-primary:        #1a3a6b;
+  --color-primary-dark:   #122850;
+  --color-primary-light:  #2a5298;
+  --color-secondary:      #c8a84b;
+  --color-accent:         #e8f0fe;
+
+  --color-text:           #1f2937;
+  --color-text-muted:     #6b7280;
+  --color-bg:             #ffffff;
+  --color-bg-alt:         #f9fafb;
+  --color-border:         #e5e7eb;
+
+  --font-heading:         'Georgia', 'Times New Roman', serif;
+  --font-body:            'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+  --radius:               6px;
+  --shadow-sm:            0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:            0 4px 16px rgba(0,0,0,.12);
+
+  --max-width:            1200px;
+  --section-padding:      80px 24px;
+}
+
+/* =========================================================
+   Base reset
+   ========================================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+/* =========================================================
+   Site layout shell
+   ========================================================= */
+.site-wrapper { display: flex; flex-direction: column; min-height: 100vh; }
+.site-main    { flex: 1; }
+
+/* =========================================================
+   Header
+   ========================================================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.site-header__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-logo img { height: 48px; width: auto; }
+.site-logo a   { display: flex; align-items: center; }
+
+/* Primary navigation */
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.primary-nav a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  border-radius: var(--radius);
+  transition: background 0.15s, color 0.15s;
+}
+
+.primary-nav a:hover,
+.primary-nav .current-menu-item > a {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.primary-nav .menu-item-has-children { position: relative; }
+
+.primary-nav .sub-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 200px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  flex-direction: column;
+  gap: 0;
+  z-index: 100;
+}
+
+.primary-nav .menu-item-has-children:hover .sub-menu,
+.primary-nav .menu-item-has-children:focus-within .sub-menu { display: flex; }
+
+.primary-nav .sub-menu a {
+  padding: 10px 16px;
+  border-radius: 0;
+  white-space: nowrap;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+.site-footer {
+  background: var(--color-primary-dark);
+  color: #d1d5db;
+  padding: 48px 24px 24px;
+}
+
+.site-footer__grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.site-footer__brand .site-logo img { filter: brightness(0) invert(1); height: 40px; }
+
+.site-footer h4 {
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.site-footer ul { list-style: none; }
+.site-footer ul li { margin-bottom: 8px; }
+.site-footer a { color: #9ca3af; font-size: 0.9rem; }
+.site-footer a:hover { color: #ffffff; text-decoration: none; }
+
+.site-footer__bottom {
+  max-width: var(--max-width);
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* =========================================================
+   Page content (non-Elementor fallback)
+   ========================================================= */
+.entry-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding);
+}
+
+/* =========================================================
+   404 page
+   ========================================================= */
+.error-404 {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.error-404 h1 { font-size: 6rem; color: var(--color-border); margin-bottom: 16px; }
+.error-404 h2 { margin-bottom: 16px; }
+.error-404 p  { color: var(--color-text-muted); margin-bottom: 32px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+
+.btn:hover { background: var(--color-primary-dark); color: #ffffff; text-decoration: none; }
+.btn--outline { background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); }
+.btn--outline:hover { background: var(--color-primary); color: #ffffff; }

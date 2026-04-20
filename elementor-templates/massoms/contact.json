@@ -1,0 +1,194 @@
+{
+  "version": "0.4",
+  "title": "MassOMS — Contact",
+  "type": "page",
+  "content": [
+    {
+      "id": "maco01",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a4080",
+        "padding": { "unit": "px", "top": "72", "right": "40", "bottom": "72", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "macc01",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "macw01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Contact MassOMS",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "align": "center",
+                "typography_font_size": { "unit": "px", "size": 48 }
+              },
+              "elements": []
+            },
+            {
+              "id": "macw02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:rgba(255,255,255,.8);text-align:center;\">Reach out to the Massachusetts Society of Oral & Maxillofacial Surgeons.</p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maco02",
+      "elType": "section",
+      "settings": {
+        "padding": { "unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "macc02",
+          "elType": "column",
+          "settings": { "_column_size": 40 },
+          "elements": [
+            {
+              "id": "macw03",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Get in Touch",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "32", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "macw04",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-envelope", "library": "fa-solid" },
+                "title_text": "<h3>Email</h3>",
+                "description_text": "[info@massoms.com — update with actual email from HubSpot]",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8",
+                "position": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "macw05",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-phone", "library": "fa-solid" },
+                "title_text": "<h3>Phone</h3>",
+                "description_text": "[Phone number — update from HubSpot]",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8",
+                "position": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "macw06",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "icon": { "value": "fa fa-map-marker-alt", "library": "fa-solid" },
+                "title_text": "<h3>Address</h3>",
+                "description_text": "[Mailing Address]\n[City, MA ZIP — update from HubSpot]",
+                "icon_color": "#1a4080",
+                "icon_background_color": "#e8eef8",
+                "position": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "macw07",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "For Patients",
+                "header_size": "h3",
+                "typography_font_size": { "unit": "px", "size": 18 },
+                "margin": { "unit": "px", "top": "24", "bottom": "12", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "macw08",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#6b7280;font-size:.9rem;\">To find an OMS in Massachusetts, please use our <a href=\"/find-a-surgeon/\" style=\"color:#1a4080;font-weight:600;\">surgeon directory</a>. MassOMS is a professional society and does not provide direct patient services.</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "macc03",
+          "elType": "column",
+          "settings": { "_column_size": 60 },
+          "elements": [
+            {
+              "id": "macw09",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Send a Message",
+                "header_size": "h2",
+                "typography_font_size": { "unit": "px", "size": 28 },
+                "margin": { "unit": "px", "bottom": "24", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "macw10",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<p style=\"color:#6b7280;font-size:.9rem;margin-bottom:24px;\">Install <strong>WPForms Lite</strong> or <strong>Contact Form 7</strong>, create a contact form, then replace this placeholder with the shortcode.</p>\n<div style=\"border:2px dashed #e5e7eb;border-radius:6px;padding:48px;text-align:center;background:#f9fafb;\">\n  <p style=\"color:#6b7280;font-size:.95rem;\">📋 <strong>Contact Form Placeholder</strong><br>Replace with: <code>[wpforms id=\"1\"]</code><br>or: <code>[contact-form-7 id=\"1\"]</code></p>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maco03",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": { "unit": "px", "top": "48", "right": "40", "bottom": "48", "left": "40", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "macc04",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "macw11",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<p style=\"text-align:center;color:#6b7280;font-size:.85rem;\">[Optional: Embed a Google Map here using the Elementor Google Maps widget or an iframe. Add your office address to display a map pin.]</p>\n<div style=\"background:#e5e7eb;height:300px;border-radius:6px;display:flex;align-items:center;justify-content:center;margin-top:16px;\">\n  <p style=\"color:#9ca3af;\">Map Placeholder — Replace with Google Maps widget</p>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": { "hide_title": true }
+}
