@@ -1,0 +1,481 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── AUTH ──────────────────────────────────────────────────────────────────
+
+model User {
+  id                    String    @id @default(cuid())
+  email                 String    @unique
+  emailVerified         DateTime?
+  name                  String?
+  phoneNumber           String?
+  phoneVerified         Boolean   @default(false)
+  image                 String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  kycStatus             KycStatus @default(PENDING)
+  kycProviderId         String?
+
+  dwollaCustomerId      String?   @unique
+  dwollaFundingSourceId String?
+
+  roundupEnabled        Boolean   @default(true)
+  roundupThresholdCents Int       @default(500)
+  paymentStrategy       PaymentStrategy @default(SNOWBALL)
+  notifyEmail           Boolean   @default(true)
+  notifySms             Boolean   @default(false)
+
+  currentStreak         Int       @default(0)
+  longestStreak         Int       @default(0)
+  lastActivityDate      DateTime?
+
+  accounts              Account[]
+  sessions              Session[]
+  linkedBankAccounts    LinkedBankAccount[]
+  loans                 Loan[]
+  transactions          Transaction[]
+  roundups              Roundup[]
+  paymentQueue          PaymentQueueItem[]
+  loanPayments          LoanPayment[]
+  scheduledDeposits     ScheduledDeposit[]
+  userMilestones        UserMilestone[]
+  auditLogs             AuditLog[]
+
+  @@index([email])
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ─── BANK ACCOUNTS ─────────────────────────────────────────────────────────
+
+model LinkedBankAccount {
+  id                      String    @id @default(cuid())
+  userId                  String
+  user                    User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  plaidItemId             String    @unique
+  plaidAccessToken        String    // encrypted at rest
+  plaidAccountId          String
+  plaidCursor             String?
+
+  institutionId           String
+  institutionName         String
+  accountName             String
+  accountMask             String
+  accountType             PlaidAccountType
+  accountSubtype          String?
+
+  dwollaFundingSourceId   String?   @unique
+  dwollaFundingSourceStatus String?
+
+  status                  BankAccountStatus @default(ACTIVE)
+  isRoundupSource         Boolean   @default(false)
+  isPrimaryFunding        Boolean   @default(false)
+
+  createdAt               DateTime  @default(now())
+  updatedAt               DateTime  @updatedAt
+  lastSyncedAt            DateTime?
+  consentExpiresAt        DateTime?
+
+  transactions            Transaction[]
+  roundups                Roundup[]
+
+  @@index([userId])
+  @@index([plaidItemId])
+}
+
+// ─── TRANSACTIONS ──────────────────────────────────────────────────────────
+
+model Transaction {
+  id                    String    @id @default(cuid())
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id])
+  linkedBankAccountId   String
+  linkedBankAccount     LinkedBankAccount @relation(fields: [linkedBankAccountId], references: [id])
+
+  plaidTransactionId    String    @unique
+  amountCents           Int
+  merchantName          String?
+  merchantCategory      String[]
+  date                  DateTime
+  pending               Boolean   @default(false)
+
+  roundupAmountCents    Int?
+  roundup               Roundup?
+
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([userId, date])
+  @@index([plaidTransactionId])
+}
+
+// ─── ROUND-UPS ─────────────────────────────────────────────────────────────
+
+model Roundup {
+  id                    String    @id @default(cuid())
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id])
+  transactionId         String    @unique
+  transaction           Transaction @relation(fields: [transactionId], references: [id])
+  linkedBankAccountId   String
+  linkedBankAccount     LinkedBankAccount @relation(fields: [linkedBankAccountId], references: [id])
+
+  originalAmountCents   Int
+  roundedUpToCents      Int
+  roundupAmountCents    Int
+
+  status                RoundupStatus @default(PENDING)
+
+  paymentQueueItemId    String?
+  paymentQueueItem      PaymentQueueItem? @relation(fields: [paymentQueueItemId], references: [id])
+
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([userId, status])
+}
+
+// ─── LOANS ─────────────────────────────────────────────────────────────────
+
+model Loan {
+  id                    String    @id @default(cuid())
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  loanName              String
+  servicerName          String
+  servicerAccountNumber String?   // encrypted at rest
+  loanType              LoanType
+
+  originalBalanceCents  Int
+  currentBalanceCents   Int
+  interestRateBps       Int       // 650 = 6.50%
+  minimumPaymentCents   Int
+
+  disbursementDate      DateTime?
+  nextPaymentDate       DateTime?
+  payoffDate            DateTime?
+
+  servicerPaymentUrl    String?
+
+  snowballOrder         Int?
+  avalancheOrder        Int?
+
+  status                LoanStatus @default(ACTIVE)
+  isManualEntry         Boolean   @default(true)
+
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  payments              LoanPayment[]
+  paymentQueueItems     PaymentQueueItem[]
+
+  @@index([userId, status])
+}
+
+// ─── PAYMENT QUEUE ─────────────────────────────────────────────────────────
+
+model PaymentQueueItem {
+  id                    String    @id @default(cuid())
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id])
+
+  sourceType            PaymentSourceType
+  scheduledDepositId    String?
+  scheduledDeposit      ScheduledDeposit? @relation(fields: [scheduledDepositId], references: [id])
+
+  amountCents           Int
+
+  targetLoanId          String?
+  targetLoan            Loan?     @relation(fields: [targetLoanId], references: [id])
+
+  status                PaymentQueueStatus @default(ACCUMULATING)
+
+  dwollaTransferUrl     String?
+  dwollaTransferStatus  String?
+
+  roundups              Roundup[]
+
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+  scheduledAt           DateTime?
+  initiatedAt           DateTime?
+  settledAt             DateTime?
+
+  loanPayments          LoanPayment[]
+
+  @@index([userId, status])
+}
+
+// ─── SCHEDULED DEPOSITS ────────────────────────────────────────────────────
+
+model ScheduledDeposit {
+  id            String    @id @default(cuid())
+  userId        String
+
+  amountCents   Int
+  frequency     DepositFrequency
+  dayOfWeek     Int?
+  dayOfMonth    Int?
+  startDate     DateTime
+  endDate       DateTime?
+
+  isActive      Boolean   @default(true)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  paymentQueueItems PaymentQueueItem[]
+}
+
+// ─── LOAN PAYMENTS ─────────────────────────────────────────────────────────
+
+model LoanPayment {
+  id                    String    @id @default(cuid())
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id])
+  loanId                String
+  loan                  Loan      @relation(fields: [loanId], references: [id])
+  paymentQueueItemId    String?
+  paymentQueueItem      PaymentQueueItem? @relation(fields: [paymentQueueItemId], references: [id])
+
+  amountCents           Int
+  principalCents        Int?
+  interestCents         Int?
+
+  paymentMethod         PaymentMethod
+  status                PaymentStatus @default(PENDING)
+
+  dwollaTransferUrl     String?
+  confirmationNumber    String?
+  paidAt                DateTime?
+
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([loanId, createdAt])
+  @@index([userId, createdAt])
+}
+
+// ─── MILESTONES ────────────────────────────────────────────────────────────
+
+model Milestone {
+  id                String    @id @default(cuid())
+  key               String    @unique
+  name              String
+  description       String
+  emoji             String
+  category          MilestoneCategory
+  triggerType       MilestoneTriggerType
+  triggerThreshold  Int?
+  isSecret          Boolean   @default(false)
+  sortOrder         Int       @default(0)
+
+  userMilestones    UserMilestone[]
+}
+
+model UserMilestone {
+  id                  String    @id @default(cuid())
+  userId              String
+  user                User      @relation(fields: [userId], references: [id])
+  milestoneId         String
+  milestone           Milestone @relation(fields: [milestoneId], references: [id])
+  earnedAt            DateTime  @default(now())
+  celebrationSeenAt   DateTime?
+
+  @@unique([userId, milestoneId])
+  @@index([userId])
+}
+
+// ─── EDUCATION ─────────────────────────────────────────────────────────────
+
+model EducationArticle {
+  id                  String    @id @default(cuid())
+  slug                String    @unique
+  title               String
+  excerpt             String
+  content             String    @db.Text
+  category            EducationCategory
+  readingTimeMinutes  Int
+  emoji               String
+  publishedAt         DateTime
+  updatedAt           DateTime  @updatedAt
+  isPublished         Boolean   @default(false)
+  tags                String[]
+}
+
+// ─── AUDIT LOG ─────────────────────────────────────────────────────────────
+
+model AuditLog {
+  id          String    @id @default(cuid())
+  userId      String?
+  user        User?     @relation(fields: [userId], references: [id])
+  action      String
+  entityType  String?
+  entityId    String?
+  metadata    Json?
+  ipAddress   String?
+  userAgent   String?
+  createdAt   DateTime  @default(now())
+
+  @@index([userId, createdAt])
+  @@index([action, createdAt])
+}
+
+// ─── ENUMS ─────────────────────────────────────────────────────────────────
+
+enum KycStatus {
+  PENDING
+  IN_REVIEW
+  APPROVED
+  REJECTED
+}
+
+enum PaymentStrategy {
+  SNOWBALL
+  AVALANCHE
+  PROPORTIONAL
+}
+
+enum PlaidAccountType {
+  CHECKING
+  SAVINGS
+  CREDIT
+  LOAN
+  INVESTMENT
+}
+
+enum BankAccountStatus {
+  ACTIVE
+  RELINK_REQUIRED
+  REMOVED
+}
+
+enum LoanType {
+  FEDERAL_SUBSIDIZED
+  FEDERAL_UNSUBSIDIZED
+  FEDERAL_PLUS
+  FEDERAL_GRAD_PLUS
+  PRIVATE
+  REFINANCED
+  OTHER
+}
+
+enum LoanStatus {
+  ACTIVE
+  PAID_OFF
+  IN_DEFERMENT
+  IN_FORBEARANCE
+  DEFAULTED
+}
+
+enum RoundupStatus {
+  PENDING
+  BATCHED
+  TRANSFERRED
+  SETTLED
+  CANCELLED
+}
+
+enum PaymentSourceType {
+  ROUNDUP_BATCH
+  SCHEDULED_DEPOSIT
+  MANUAL_DEPOSIT
+}
+
+enum PaymentQueueStatus {
+  ACCUMULATING
+  READY
+  INITIATED
+  SETTLED
+  APPLIED
+  FAILED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  ACH_CLOAN
+  MANUAL
+}
+
+enum PaymentStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+enum DepositFrequency {
+  WEEKLY
+  BIWEEKLY
+  MONTHLY
+}
+
+enum MilestoneCategory {
+  STREAK
+  SAVINGS
+  LOAN_PAYOFF
+  ENGAGEMENT
+  EDUCATIONAL
+}
+
+enum MilestoneTriggerType {
+  FIRST_ROUNDUP
+  ROUNDUP_COUNT
+  TOTAL_SAVED_CENTS
+  LOAN_PAID_OFF
+  STREAK_DAYS
+  ARTICLE_READ
+  ACCOUNT_LINKED
+  CONSECUTIVE_WEEKS_SAVED
+}
+
+enum EducationCategory {
+  LOAN_BASICS
+  INTEREST_AND_RATES
+  REPAYMENT_STRATEGIES
+  LIFE_DECISIONS
+  REFINANCING
+  FORGIVENESS_PROGRAMS
+  BUDGETING
+}
