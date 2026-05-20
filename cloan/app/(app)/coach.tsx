@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useState, useMemo, useRef } from "react";
 import { useLoansStore } from "@/lib/store/loans";
 import { useSavingsStore } from "@/lib/store/savings";
-import { useXPStore, PRESET_SCENARIOS } from "@/lib/store/xp";
+import { useXPStore } from "@/lib/store/xp";
 import { calculateWhatIf, PRESET_SCENARIOS as WhatIfPresets } from "@/lib/utils/what-if";
 import { getNextDollarRecommendations } from "@/lib/utils/next-dollar";
 import { formatCents, formatCentsCompact } from "@/lib/utils/currency";
@@ -111,7 +111,6 @@ export default function CoachScreen() {
         </View>
 
         <View className="px-6 mt-5 gap-y-4 pb-8">
-          {/* ── NEXT DOLLAR TAB ── */}
           {activeTab === "next-dollar" && (
             <>
               <View className="bg-brand-900 rounded-2xl p-4">
@@ -135,29 +134,6 @@ export default function CoachScreen() {
                       <View className="flex-row items-center gap-x-2 mb-1">
                         <Text className="text-lg">{rec.emoji}</Text>
                         <Text className="font-bold text-brand-900 flex-1">{rec.title}</Text>
-                        <View
-                          className={`rounded-lg px-2 py-0.5 ${
-                            rec.urgency === "critical"
-                              ? "bg-red-100"
-                              : rec.urgency === "high"
-                              ? "bg-orange-100"
-                              : rec.urgency === "medium"
-                              ? "bg-brand-200"
-                              : "bg-stone-100"
-                          }`}
-                        >
-                          <Text
-                            className={`text-xs font-bold capitalize ${
-                              rec.urgency === "critical"
-                                ? "text-red-700"
-                                : rec.urgency === "high"
-                                ? "text-orange-700"
-                                : "text-brand-700"
-                            }`}
-                          >
-                            {rec.urgency}
-                          </Text>
-                        </View>
                       </View>
                       <Text className="text-sm text-brand-700 leading-relaxed">{rec.reason}</Text>
                     </View>
@@ -175,7 +151,6 @@ export default function CoachScreen() {
             </>
           )}
 
-          {/* ── WHAT-IF TAB ── */}
           {activeTab === "what-if" && (
             <>
               <View className="bg-brand-900 rounded-2xl p-4">
@@ -219,7 +194,6 @@ export default function CoachScreen() {
                       <Text className="text-xs font-bold text-brand-600 uppercase tracking-wide mb-3">
                         Scenario: {whatIfResults.scenarioLabel}
                       </Text>
-
                       <View className="flex-row gap-x-3 mb-3">
                         <View className="flex-1 bg-stone-100 rounded-xl p-3">
                           <Text className="text-xs text-stone-500">Current payoff</Text>
@@ -234,7 +208,6 @@ export default function CoachScreen() {
                           </Text>
                         </View>
                       </View>
-
                       {whatIfResults.monthsSaved > 0 && (
                         <View className="flex-row gap-x-3 mb-3">
                           <View className="flex-1 bg-brand-400 rounded-xl p-3">
@@ -251,7 +224,6 @@ export default function CoachScreen() {
                           </View>
                         </View>
                       )}
-
                       <Text className="text-sm text-brand-800 leading-relaxed">
                         {whatIfResults.summary}
                       </Text>
@@ -262,7 +234,6 @@ export default function CoachScreen() {
             </>
           )}
 
-          {/* ── LIFE EVENTS TAB ── */}
           {activeTab === "life-events" && (
             <>
               <View className="bg-brand-900 rounded-2xl p-4">
@@ -293,11 +264,6 @@ export default function CoachScreen() {
                         <Text className="text-sm text-brand-800 leading-relaxed">
                           {event.advice}
                         </Text>
-                        <View className="mt-2 bg-brand-400 rounded-xl px-3 py-2">
-                          <Text className="text-xs font-bold text-brand-900">
-                            💡 Cloan never tells you not to live your life — just how to do it wisely.
-                          </Text>
-                        </View>
                       </View>
                     )}
                   </Card>

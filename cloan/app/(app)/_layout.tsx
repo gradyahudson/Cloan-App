@@ -46,37 +46,42 @@ export default function AppLayout() {
         }}
       />
       <Tabs.Screen
-        name="loans"
+        name="money"
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="📋" label="Loans" focused={focused} />
+            <TabIcon emoji="💰" label="Money" focused={focused} />
           ),
         }}
       />
       <Tabs.Screen
-        name="roundups"
+        name="coach"
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="🪙" label="Round-ups" focused={focused} />
+            <TabIcon emoji="🧠" label="Coach" focused={focused} />
           ),
         }}
       />
       <Tabs.Screen
-        name="milestones"
+        name="community"
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="🏆" label="Wins" focused={focused} />
+            <TabIcon emoji="👥" label="Community" focused={focused} />
           ),
         }}
       />
       <Tabs.Screen
-        name="learn"
+        name="you"
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="📚" label="Learn" focused={focused} />
+            <TabIcon emoji="🌱" label="You" focused={focused} />
           ),
         }}
       />
+      {/* Hidden legacy screens */}
+      <Tabs.Screen name="loans" options={{ href: null }} />
+      <Tabs.Screen name="roundups" options={{ href: null }} />
+      <Tabs.Screen name="milestones" options={{ href: null }} />
+      <Tabs.Screen name="learn" options={{ href: null }} />
     </Tabs>
   );
 }

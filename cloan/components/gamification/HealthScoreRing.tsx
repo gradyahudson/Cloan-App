@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import Svg, { Circle } from "react-native-svg";
-import Animated, { useSharedValue, useAnimatedProps, withSpring, useEffect } from "react-native-reanimated";
+import { useEffect } from "react";
+import Animated, { useSharedValue, useAnimatedProps, withSpring } from "react-native-reanimated";
 import { getHealthScoreLabel } from "@/lib/utils/health-score";
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
@@ -36,7 +37,6 @@ export function HealthScoreRing({
     <View className="items-center">
       <View style={{ width: size, height: size }}>
         <Svg width={size} height={size} style={{ transform: [{ rotate: "-90deg" }] }}>
-          {/* Background circle */}
           <Circle
             cx={size / 2}
             cy={size / 2}
@@ -45,7 +45,6 @@ export function HealthScoreRing({
             strokeWidth={strokeWidth}
             fill="none"
           />
-          {/* Progress circle */}
           <AnimatedCircle
             cx={size / 2}
             cy={size / 2}
@@ -58,7 +57,6 @@ export function HealthScoreRing({
             strokeLinecap="round"
           />
         </Svg>
-        {/* Center content */}
         <View
           style={{ position: "absolute", width: size, height: size }}
           className="items-center justify-center"

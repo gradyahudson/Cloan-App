@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
-import Animated, { useSharedValue, useAnimatedStyle, withSpring, useEffect } from "react-native-reanimated";
+import { useEffect } from "react";
+import Animated, { useSharedValue, useAnimatedStyle, withSpring } from "react-native-reanimated";
 import { getLevelForXP, getXPProgress, getXPToNextLevel, LEVELS } from "@/lib/store/xp";
 
 interface XPBarProps {
